@@ -1,0 +1,10 @@
+AOS.init();
+$(document).ready(function(){
+  $("select").niceSelect();
+  $(".close").click(function(){
+    $(".show-menu").slideToggle();
+  });
+  $(".burger").click(function(){
+    $(".show-menu").toggle();
+  });
+});

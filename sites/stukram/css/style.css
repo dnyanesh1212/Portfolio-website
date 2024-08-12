@@ -1,0 +1,361 @@
+/* 
+    font-family: 'Inter', sans-serif;
+
+    font-family: 'Manrope', sans-serif;
+*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+::selection{
+    color: #fff;
+    background: #FF002E !important;
+}
+a:hover{
+    text-decoration: none;
+}
+h1,h2,h3,h4{
+    color: #000 !important;
+    font-family: 'Inter', sans-serif;
+}
+h4{
+    font-weight: 500;
+}
+p{
+    font-family: 'Manrope', sans-serif;
+}
+.counter{
+    color: #000;
+    font-family: 'Inter', sans-serif;
+}
+header{
+    background: url(../images/illustration/blob.svg);
+    background-repeat: no-repeat;
+    background-position: 140% 0;
+}
+header h1 span{
+    display: block;
+}
+.title h1{
+    font-size:3rem;
+}
+.title .h1-span{
+    display: block;
+    color: #FF002E !important;
+}
+.title-p{
+    width: 80%;
+}
+.title-a{
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 30px;
+    background-color: transparent;
+    color: #000;
+    transition: all 0.6s;
+}
+.title-a:hover{
+    color: #fff !important;
+    background: #000;
+}
+.form-control{
+    border: 1px solid #f2f2f2;
+    border-radius: 0px !important;
+}
+.form-control:focus{
+    border-color:#FF002E;
+    box-shadow: none;
+}
+.burger span{
+    display: block;
+    margin: 7px 0px;
+    width: 30px;
+    height: 2px;
+    background: #000;
+    transition: all 0.2s;
+}
+.burger:hover span{
+    background: #FF002E !important;
+}
+.menu{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: #111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.close, .a{
+    font-size: 2rem;
+    transition: all 1s;
+}
+.a:hover{
+    color: #FF002E !important;
+}
+.close:hover{
+    color: #FF002E !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+.modal-header, .modal-footer{
+    border: none !important;
+}
+.social-top li a{
+    transition: all 0.2s;
+}
+.social-top li a:hover{
+    color: #FF002E !important;
+}
+.red-h2{
+    font-size: 8vw;
+}
+.red-img{
+    height: 320px;
+    background: url(../images/background/red.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.services{
+    background: url(../images/illustration/blob.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 150%;
+}
+.service-icon a{
+    font-size: 2rem;
+    color: #FF002E;
+}
+.sub-h4{
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+.img1{
+    position: relative;
+    overflow: hidden;
+}
+.img1 img{
+    transition: transform .2s;
+}
+.img1:hover img{
+    transform: scale(1.1);
+}
+.img-black{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+.img1:hover .img-black{
+    opacity: 1;
+}
+.mid-img{
+    position: relative;
+    overflow: hidden;
+}
+.mid-img img{
+    transition: transform .2s;
+}
+.mid-img:hover img{
+    transform: scale(1.1);
+}
+.mid-img:hover .img-black{
+    opacity: 1;
+}
+.slide-img{
+    width: 64px;
+    height: 64px;
+}
+.carousel-indicators li{
+    background: rgba(0,0,0,0.6);
+    width: 15px !important;
+    height: 0px !important;
+    border-radius: 50% !important;
+}
+.slide-next{
+    font-size: 4rem;
+    color: #000;
+}
+.blue{
+    height: 680px;
+    background: url(../images/background/blue.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.blue i{
+    font-size: 3rem;
+}
+.get-in-touch{
+    height: 476px;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/background/pink.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.get-in-touch a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #fff;
+    transition: all 0.6s;
+}
+.get-in-touch a:hover{
+    background: none;
+    color: #fff;
+}
+.team-h2{
+    font-size: 2.4rem;
+}
+.social-a li a:hover{
+    color: #FF002E !important;
+}
+.footer-social li a{
+    color: #000 !important;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.footer-social li a:hover{
+    color: #FF002E !important;
+}
+footer h3 a{
+    transition: all 0.2s;
+    color: #000 !important;
+}
+footer h3 a:hover{
+    color: #FF002E !important;
+}
+.copy{
+    font-size: 1rem;
+}
+.p{color: #000;}
+@media  only screen and (min-width:576px){
+    .title-p{
+        width: 60%;
+    }
+  .mid-img{
+      width: 100%;
+      height: 530px;
+  }
+  .img1{
+    width: 100%;
+    height: 258px;
+}
+ .title h1{
+      font-size: 4rem;
+  }
+  .title h1 span{
+    font-size: 4rem; 
+}
+.red-h2{
+    font-size: 5vw;
+}
+.team-h2{
+    font-size: 2.6rem;
+}
+}
+@media  only screen and (min-width:768px){
+    .title-p{
+        width: 50%;
+    }
+    .mid-img{
+        height: 468px;
+    }
+    .team-h2{
+        font-size: 2.8rem;
+    }
+    .mid-img{
+        width: 100%;
+        height: 468px;
+    }
+    .img1{
+        width: 100%;
+        height: 226px;
+    }
+}
+@media  only screen and (min-width:992px){
+    .title-p{
+        width: 30%;
+    }
+    .mid-img{
+        height: 618px;
+    }
+    .title h1{
+        font-size: 5rem;
+    }
+    .title h1 span{
+        font-size: 5rem; 
+    }
+    .red-img{
+        height: 488px;
+    }
+    .red-h2{
+        font-size: 4vw;
+        margin-left: -100px;
+    }
+    .mid-img{
+        width: 100%;
+        height: 578px;
+    }
+    .img1{
+        width: 100%;
+        height: 278px;
+    }
+    .team-h2{
+        font-size: 3.2rem;
+    }
+    .get-in-touch h2{
+        font-size: 3rem;
+    }
+    footer p{
+        font-size: 1.24rem;
+    }
+    footer h3{
+        font-size: 3rem;
+    }
+    .footer-social li a{
+        font-size: 1.6rem;
+    }
+}
+@media only screen and (min-width:1200px){
+    .title{
+        background: url(../images/illustration/blob.svg);
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+    
+    .red-img{
+        height: 578px;
+    }
+    .mid-img{
+        height: 718px;
+    }
+    .title h1{
+        font-size: 6rem;
+    }
+    .title h1 span{
+        font-size: 6rem; 
+    }
+    .red-h2{
+        font-size:3vw;
+    }
+    .mid-img{
+        width: 100%;
+        height: 818px;
+    }
+    .img1{
+        width: 100%;
+        height: 398px;
+    }
+    .mid-img{
+        height: 814px;
+    }
+}

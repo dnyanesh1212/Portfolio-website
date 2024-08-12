@@ -1,0 +1,243 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+::selection{
+    color: #FECC18;
+    background: #171717;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #171717 !important;
+    font-family: 'Oswald', sans-serif;
+}
+a:hover{
+    text-decoration: none;
+}
+.yellow{
+    color: #FECC18 !important;
+}
+.yellow-bg{
+    background-color: #FECC18;
+}
+.nav{
+    position: absolute;
+    top:10px;
+    z-index: 5;
+}
+.slider1{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../images/background/home1_1.jpg) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh !important;
+}
+.slider2{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../images/background/home1_2.jpg) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh !important;
+}
+.slider3{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../images/background/home1_3.jpg) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh !important;
+}
+.arrow{
+    font-size: 3.5rem;
+}
+.h1{
+    margin-top: 20vh;
+    font-size: 11vw;
+}
+.a{
+    transition: all 1s !important;
+}
+.a:hover{
+    color: #fff;
+    font-weight: bold;
+}
+.hero-btn{
+    border: none;
+    background: #FECC18;
+    color: #000 !important;
+}
+.carousel-indicators li{
+    border: none !important;
+    width: 15px !important;
+    height: 15px !important;
+}
+.menu{
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 0%;
+    height: 100vh;
+    top: 0px;
+    left: -60px;
+    z-index: 100;
+    transition: all 0.7s;
+}
+.menu .a{
+    font-size: small;
+    color: #FECC18 !important;
+    transition: all 0.3s;
+}
+.menu .a:hover{
+    color: #fff !important;
+}
+.cancel{
+    font-size: 2rem;
+    color: #fff !important;
+}
+.small{
+    font-size: smaller;
+}
+.h2{
+    font-size: 10vw;
+}
+.watch{
+    letter-spacing: 3px;
+}
+.watch i{
+    background: #FECC18;
+}
+.over-img{
+    position: relative;
+    overflow: hidden;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+.black{
+    background: #171717;
+}
+.car{
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+}
+.car-over{
+    background: #FECC18;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.car-title{
+    background: #171717;
+}
+.grey{
+    background: #F5F5F5;
+}
+.icon-45 img{
+    width: 45px;
+    height: 45px;
+}
+.book{
+    background-image: url(../images/background/bg-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.book h2{
+    color: #FECC18 !important;
+}
+.rates h6{
+    background: #171717;
+}
+.rates-p{
+    background: #FECC18;
+}
+.order-btn{
+    color: transparent;
+    transition: all 1s;
+}
+.order-btn:hover{
+    color: #FECC18;
+    background: #171717;
+}
+.modal-header, .modal-body, .modal-footer{
+    border: none;
+}
+.mission-img{
+    width: 40px;
+    height: 40px;
+}
+.app-icon{
+    width: 40px;
+    height: 40px;
+}
+input{
+    border: none !important;
+    border-bottom: 2px solid #f2f2f2 !important;
+}
+input:focus{
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0px;
+    border-bottom: 2px solid #000 !important;
+}
+.submit{
+    border: none !important;
+}
+.footer{
+    background: #171717;
+}
+.social i{
+    color: #171717;
+    background: #FECC18;
+    border-color: #FECC18 !important;
+    padding: 13px;
+    transition: all 1s;
+}
+.social i:hover{
+    color: #fff;
+}
+.footer-bottom{
+    background: #222222;
+}
+@media  only screen and (min-width:576px){
+ .call{
+     font-size: 8vw;
+ }
+ .h1{
+    font-size: 9vw;
+ }
+ .h2{
+    font-size: 6vw;
+}
+.menu .a{
+    font-size: 1.4rem;
+}
+}
+@media  only screen and (min-width:768px){
+    .h1{
+        font-size: 7vw;
+     }
+    .h2{
+        font-size: 5vw;
+    }
+}
+@media  only screen and (min-width:992px){
+    .call{
+        font-size: 6vw;
+    }
+    .h1{
+        font-size: 8vw;
+     }
+    .h2{
+        font-size: 4vw;
+    }
+}
+@media only screen and (min-width:1200px){
+    .h1{
+        font-size: 6vw;
+     }
+}

@@ -1,0 +1,226 @@
+html{
+    scroll-behavior: smooth;
+}
+::selection{
+    color: #fff;
+    background: #FF5F21;
+}
+body{
+    overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald', sans-serif;
+}
+.menu ul li{
+    font-family: 'Oswald', sans-serif;
+}
+.header{
+    height: 100vh;
+    background-image: url(../images/background/hero.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer{
+    background-image: url(../images/background/footer-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.burger{
+    font-size: 1.8rem;
+}
+.logo{
+    position: relative;
+    z-index: 50;
+}
+.close{
+    background: #FF5F21;
+}
+.show-menu{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+.menu{
+    display: none !important;
+}
+.hero-text{
+    margin-top: 20vh;
+}
+.h1{
+    font-size: 7vw;
+}
+.hero-btn{
+    width: 180px;
+    margin: 0 auto !important;
+    transition: all 1s;
+}
+.hero-btn:hover{
+    text-decoration: none;
+    background: #fff;
+    color: #FF5F21 !important;
+}
+.about-btn, .project-btn{
+    width: 180px;
+    background:#000;
+    transition: all 1s;
+}
+.about-btn:hover{
+    text-decoration: none;
+    background:#FF5F21;
+}
+.project-btn:hover{
+    text-decoration: none;
+    background:#FF5F21;
+}
+.overlay{
+    background:#FF5F21;
+    position: relative;
+    left: -20px;
+    bottom: 110px;
+}
+.dot::before{
+        position: absolute;
+        z-index: 0;
+        content: "";
+        top: 40px;
+        left: 40px;
+        background-image: radial-gradient(red 20%, transparent 18%);
+        background-position: 0 0;
+        background-size: 6px 11px;
+        height: 65%;
+        width: 1%;
+        border-radius: 0;
+}
+.contact-btn{
+    background:#FF5F21;
+    border: 1px solid #FF5F21 !important;
+}
+input,textarea,select{
+    border-radius: 0px !important;
+    border: 1px solid #f2f2f2 !important;
+}
+.social i{
+    border: 1px solidrgba(0, 0, 0, 0);
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    transition: all 1s;
+}
+.social i:hover{
+    color: #fff !important;
+    background: #FF5F21;
+}
+.project-social{
+    position: relative;
+    z-index: 10;
+    font-size: 1.6rem;
+    border: 1px solidrgba(0, 0, 0, 0);
+    border-radius: 50%;
+    background: #FF5F21;
+}
+.orange{
+    color: #FF5F21 !important;
+}
+.quote-img{
+    display: none;
+}
+.recent-img{
+    display: none;
+}
+.slider{
+    background-image: url(../images/background/section_bg03.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+.slider-p{
+    width: 80%;
+}
+.li{
+    border: 1px solid !important;
+    border-radius: 50% !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+.form-control{
+    border: 1px solid #f2f2f2 !important;
+    border-radius: 0px !important;
+}
+.form-control:focus{
+    border: 1px solid #FF5F21 !important;
+    box-shadow: none !important;
+}
+@media  only screen and (min-width:576px){
+    .hero-text{
+        margin-top: 30vh;
+    }
+    .dot::before{
+        left: 70px;  
+}
+}
+@media  only screen and (min-width:768px){
+    .hero-text{
+        margin-top: 36vh;
+    }
+    .overlay{
+        bottom: 155px;
+    }
+}
+@media  only screen and (min-width:992px){
+    .hero-text{
+        margin-top: 30vh;
+    }
+    .menu{
+        display: flex !important;
+    }
+    .burger{
+        display: none !important;
+    }
+    h1{
+        font-size: 5vw;
+    }
+    .overlay{
+        bottom: 135px;
+    }
+    .quote-img{
+        display: block;
+        background-image: url(../images/background/contact-img.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    .recent-img{
+        display: block;
+        height: 500px;
+        background-image: url(../images/background/visit_bg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    .slider{
+        height: 400px;
+    }
+    .footer{
+        height: 500px;
+    }
+    .credit{
+        margin-top: 110px !important;
+    }
+}
+@media only screen and (min-width:1200px){
+    .hero-text{
+        margin-top: 20vh;
+    }
+    .overlay{
+        bottom: 155px;
+    }
+    .slider{
+        height: 550px;
+    }
+}

@@ -1,0 +1,520 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
+}
+body{
+    overflow-x: hidden;
+}
+h2{
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 1.4em 0em 0.5em 0em;
+}
+img{
+    max-width: 100%;
+    height: 50%;
+}
+figure{
+    width: 100%;
+    padding: 10px;
+    margin: 0.5em;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+figcaption{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 0.5em;
+}
+.main{
+    width: 100%;
+}
+.text{
+    text-align: center;
+}
+.top-menu{
+    display: none;
+}
+.dropdown{
+    z-index: 1;
+}
+.menu{
+    background-color: #fff;
+    position: fixed;
+    width: 0%;
+    height: 100vh;
+    top: 0px;
+    right: -60px;
+    z-index: 100;
+    transition: all 0.7s;
+}
+.menu ul{
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu ul li{
+    margin: 15px 0px;
+    margin-right: 20px;
+}
+.menu ul li a{
+    color: #000;
+    font-weight: bold;
+}
+.cancel{
+    font-size: 2rem;
+    color: #000;
+    margin-left: 60%;
+    margin-top: 50px;
+}
+.header{
+    height: 95vh;
+    color: #fff;
+    padding: 5px;
+    background-image: linear-gradient(45deg,rgba(47,7,67,0.6),rgba(252,102,250,0.6)), url(https://images.pexels.com/photos/3184419/pexels-photo-3184419.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.topmenu-container{
+    width: 100%;
+    align-self: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.purple{
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.h1-div{
+    width: 100%;
+}
+.purple h1{
+    line-height: 1.2em;
+    font-size: 2em;
+    text-align: center;
+    margin: 2em 0em 1em 0em;
+}
+.button a{
+    display: inline-block;
+    text-align: center;
+    font-weight: normal;
+    border: 2px solid #eb7d4b;
+    background: #eb7d4b;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 1em 0em;
+}
+.button a:hover{
+    cursor: pointer;
+    color: #000;
+    box-shadow: 0px 0px 10px #000;
+}
+.button a{
+    color: #fff;
+}
+.green{
+    background: #17c2a4;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.green p{
+    text-align: center;   
+}
+.greenfig-container{
+    text-align: center; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.lightblue{
+    background: #e7f1f8;
+    color: #3c4761;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+}
+.lightblue p{
+    text-align: center;   
+}
+.lightbluefig-container{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+.links a i{
+    margin: 1em 0.5em;
+    color: #3c4761;
+}
+.white{
+    color: #3c4761;
+    background: #fbfbfb;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+.white p{
+    text-align: center;   
+}
+.whitefig-container{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+}
+.orange{
+    background: #ffdd99;
+    color: #3c4761;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+.orange p{
+    text-align: center;   
+}
+.orangefig-container{
+    text-align: center; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.orangefig img{
+    width: 100%;
+    padding-bottom: 5px;
+}
+.orangeBtntop{
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.orangebuttontop{
+    text-align: center;
+    font-weight: normal;
+    border: 2px solid #ebc985;
+    border-radius: 5px;
+    background: #ebc985;
+    padding: 5px 10px;
+    margin: 0.5em 0.4em;
+}
+.orangebuttontop:hover{
+    cursor: pointer;
+    color: #000;
+    box-shadow: 0px 0px 10px #000;
+}
+.orangebuttontop:active{
+    border: 1px solid #f2f2f2;
+    box-shadow: 4px 4px 6px #000;
+}
+.orangebuttontop a{
+    color: #fff;
+}
+.orangebutton a{
+    display: inline-block;
+    text-align: center;
+    font-weight: normal;
+    background: #17c2a4;
+    border: 2px solid #17c2a4;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 1em 0em 2em 0em;
+}
+.orangebutton a:hover{
+    cursor: pointer;
+    color: #000;
+    box-shadow: 0px 0px 10px #000;
+}
+.orangebutton:active{
+    border: 1px solid #f2f2f2;
+    box-shadow: 4px 4px 6px #000;
+}
+.orangebutton a{
+    color: #fff;
+}
+.pink{
+    color: #fff;
+    background: #d74680;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+.pink p{
+    text-align: center;   
+}
+.pinkfig-container{
+    text-align: center; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.blue{
+    color: #fff;
+    background: #3c5499;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+.blue p{
+    text-align: center;   
+}
+.blue button{
+        text-align: center;
+        font-weight: normal;
+        color: #fff;
+        background: #17c2a4;
+        border: 2px solid #17c2a4;
+        border-radius: 5px;
+        margin: 1em 0em;
+        padding: 5px 10px;
+    }
+.blue button:hover{
+        cursor: pointer;
+        color: #000;
+        box-shadow: 0px 0px 10px #000;
+}
+.blue button:active{
+        border: 1px solid #f2f2f2;
+        box-shadow: 4px 4px 6px #000;
+}
+.form{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+}
+.msgb{
+        width: 85%;
+        border-radius: 4px;
+        margin: 0.5em 0em;
+        padding: 0.3em;
+}
+.msgb label{
+        display: block;
+        text-transform: uppercase;
+        text-align: left;
+        font-weight: bold;
+}
+.msgb input, .msgb textarea{
+        background: none;
+        border: 1px solid #fff; 
+        margin-top: 0.5em;
+}
+input::placeholder,textarea::placeholder{
+        color: #fff;
+}
+input, textarea{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #3c5499;
+        background: #273a71;
+        transition: all 0.5s;
+}
+input:focus, textarea:focus{
+    border: 2px solid #3c5499;
+    border-radius: 2px;
+    box-shadow: 0px 0px 15px #17c2a4;
+}
+.footer{
+    background: #344b8e;
+    text-align: center;
+    padding: 20px;
+}
+.container{
+    width: 90%;
+}
+.footer-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.footer-nav a{
+    color: #fff;
+    margin: 5px;
+    opacity: 0.7;
+}
+.footer-nav a:hover{
+    opacity: 1;
+    border-bottom: 1px solid #fff;
+}
+.footer p{
+    margin-top: 1em;
+    text-align: center;
+    color: #fff;
+    opacity: 0.8;
+}
+
+@media only screen and (min-width:768px){
+    .h1-div{
+        width: 80%;
+    }
+    .h1-div h1{
+        font-size: 2.3rem;
+    }
+    h2{
+        font-size: 1.6em;
+    }
+    figure{
+       max-width: 47%;
+       padding: 5px;
+    }
+    figcaption{
+        font-weight: 700;
+    }
+    .header{
+        padding: 10px;
+    }
+    .purple p{
+        padding: 15px;
+        font-size: 1.98em;
+    }
+    .button a{
+        padding: 15px 30px;
+    }
+    .greenfig-container{
+        padding: 1em 0em;
+    }
+    .lightbluefig-container{
+    
+        padding: 1em 0em;
+    }
+    .whitefig-container{
+        padding: 1em 0em;
+    }
+    .orangebutton a{
+        padding: 15px 30px;
+    }
+    .orangefig-container{
+        padding: 1em 0em;
+    }
+    .pinkfig-container{
+        padding: 1em 0em;
+    }
+    .msgbtn button{
+        padding: 15px 30px;
+    }
+    .container{
+        width: 80%;
+    }
+    .footer{
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width:1000px){
+    .dropdown{
+        display: none;
+    }
+    .header{
+        height: 100vh;
+    }
+    .top-menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .top-menu nav a{
+        color: #fff;
+        font-weight: 600;
+        padding: 10px;
+        margin: 0px 15px;
+        transition: all 0.5s linear;
+    }
+    .top-menu nav a:hover{
+        color: #87509c;
+        background: #fff;
+        border-radius: 5px;
+    }
+    .h1-div{
+        width: 80%;
+    }
+    .h1-div h1{
+        font-size: 2.8rem;
+    }
+    .purple{
+        height:  90vh;
+    }
+    .purple h1{
+        margin-top: 4em;
+    }
+    .greenfig-container{
+        width: 85%;
+        height: 450px;
+    }
+    .greenfig-container figure{
+        max-width: 23%;
+    }
+    .lightbluefig-container{
+        width: 85%;
+        height: 500px;
+    }
+    .lightbluefig-container figure{
+        max-width: 23%;
+    }
+    .whitefig-container{
+        width: 85%;
+        height: 350px;
+    }
+    .whitefig-container figure{
+        max-width: 23%;
+    }
+    .orangefig-container{
+        width: 85%;
+        height: 800px;
+    }
+    .pinkfig-container{
+        width: 85%;
+        height: 600px;
+    }
+}

@@ -1,0 +1,144 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    background-image: url(../images/background/body_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+a:hover{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Aclonica', sans-serif;
+}
+.font{
+    font-family: 'Aclonica', sans-serif;
+}
+.header{
+    height: 100vh;
+    background-image: url(../images/background/banner_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.menu{
+    display: none !important;
+}
+.burger{
+    font-size: 1.8rem;
+}
+.menus{
+    background-color: rgba(255,0,0,0.8);
+    position: absolute;
+    width: 0%;
+    height: 100vh;
+    top: 0px;
+    right: -90px;
+    z-index: 100;
+    transition: all 0.7s;
+}
+.menus ul li a{
+    font-size: 1.4rem;
+}
+.cancel{
+    font-size: 2rem;
+}
+.h1{
+    margin-top: 25vh;
+    font-size: 10vw;
+}
+.h2{
+    font-size: 8vw;
+}
+.header-btn{
+    background: #FF0000 !important;
+}
+.over{
+    position: relative;
+    z-index: 10;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(255,0,0,0.6);
+    opacity: 0;
+    transition: all 1s;
+    z-index: -100;
+}
+.over:hover .overlay{
+    opacity: 1;
+    
+}
+.live{
+    background-image: url(../images/background/live_stareams_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.fight{
+    background-image: url(../images/background/latest_war_img.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.vs{
+    background-image: url(../images/background/latest_war_img_1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.war{
+    width: 50px;
+    height: 50px;
+}
+.fighter{
+
+    background-image: url(../images/background/event_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.swoosh{
+    background-image: url(../images/background/pricing_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.p, .credit{
+    border-bottom: 1px dotted #f3f3f3;
+}
+.price{
+    background: #0B111F;
+}
+@media  only screen and (min-width:576px){
+    .h1{
+        font-size: 6vw;
+    }
+    .h2{
+        font-size: 6vw;
+    }
+    .fighter{
+        height: 350px;
+    }
+}
+@media  only screen and (min-width:768px){
+    
+}
+@media  only screen and (min-width:992px){
+    .h1{
+        font-size: 5vw;
+    }
+    .h2{
+        font-size: 5vw;
+    }
+    .fighter{
+        height: 450px;
+    }
+}
+@media only screen and (min-width:1200px){
+    .h2{
+        font-size: 4vw;
+    }
+    .fighter{
+        height: 550px;
+    }
+}

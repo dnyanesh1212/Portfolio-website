@@ -1,0 +1,476 @@
+.counter{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 4rem;
+    font-weight:700;
+    z-index: 1001;
+}
+.counter::after{
+    content: '%';
+    font-size: 0.5em;
+}
+.hide{
+    transform: translateY(-100vh) !important;
+    pointer-events: none;
+    transition: ease-in-out 1s;
+    transition-delay: 1s;  
+}
+body{
+    background-color: #000;
+}
+::selection{
+    background-color: #4070F4;
+    color: #fff;
+}
+.body{
+    overflow: hidden;
+}
+a{
+    text-decoration:  none !important;
+    color: #fff;
+}
+a:hover{
+    color: #fff;
+}
+.a{
+    transition: all 0.5s !important;
+}
+.green{
+    color: #4070F4 !important;
+}
+.range-wrapper{
+    width: 100%;
+    height: 0.5rem;
+    position: absolute;
+    top: 82%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.range{
+    width: 45%;
+    height: 0..4rem;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 5px;
+}
+.range-wrapper .range #span{
+    height: 0.3rem;
+    width: 0%;
+    background-color: #fff;
+    transition: width 1s;
+}
+.menu .main-menu .a:hover{
+    color: #4070F4 !important;
+}
+.social-top li a i,.project-social{
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+}
+.project-social{
+    background: #000;
+}
+.social-top li a i:hover{
+    color: #4070F4 !important;
+}
+.project-social:hover{
+    color: #4070F4 !important;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Inter', sans-serif;
+}
+p{
+    font-family: 'Manrope', sans-serif;
+}
+.p{
+    font-family: 'Manrope', sans-serif;
+}
+.content{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh !important;
+}
+.rgbKineticSlider{
+    display: block;
+    position: relative;
+    top: 0 !important;
+    left: 0 !important;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh !important;
+}
+.rgbKineticSlider canvas{
+    width: 100%;
+    height: 100vh !important;
+    position: absolute;
+    display: block;
+    top: 0 !important;
+    left: 0 !important;
+    transform: scale(1) !important;
+}
+.prev, .next{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+#nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+.burger span{
+    margin: 7px 0px !important;
+    width: 30px;
+    height: 2px;
+    background: #FFF;
+    transition: all 0.2s;
+}
+.burger i{
+    font-size: 2rem;
+}
+.burger a svg{
+    font-size: 2rem;
+}
+.menu{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.close{
+    font-size: 2rem;
+}
+.close:hover{
+    box-shadow: none !important;
+    border: none !important;
+}
+.main-menu li a{
+    font-size: 2rem;
+}
+/* Projects Style Starts here */
+.btn{
+    position: relative;
+    letter-spacing: 2px;
+    border: 1px solid rgba(255,255,255,0.3);
+    text-decoration: none;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.btn:hover{
+    color: #000;
+}
+.btn span{
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 0px;
+    transform: translate(-50% , -50%);
+    border-radius: 50%;
+    background: rgba(64, 112, 244,0.8);
+    transition:  width 0.5s, height 0.5s;
+    z-index: 1;
+}
+.btn:hover span{
+    width: 1300px;
+    height: 1300px;
+}
+::-webkit-scrollbar{
+    display: none;
+    width: 0;
+}
+#scrollpath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+    /* z-index: 1000; */
+}
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 2px;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    animation: animate2 5s linear infinite;
+}
+@keyframes animate2 {
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+#progressbar::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(10px);
+}
+#progressbar::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(30px);
+}
+/* Projects Style Ends here */
+
+/* About starts here */
+.h1c{
+    font-size: 8vw !important;
+} 
+/* .h1c span::before{
+    content: "Dnyanesh"; 
+    color: #4070F4;
+    animation: animateh1c 4s infinite; 
+    animation-timing-function: linear;
+    transition: all 1s;
+}
+@keyframes animateh1c { 
+  
+    0% { 
+        content: "Dnyanesh";
+        color: #4070F4; 
+    } 
+
+    50% { 
+        content: "Web Desginer"; 
+        color: #4070F4;
+    } 
+
+    75% { 
+        content: "CS Engineer"; 
+        color: #4070F4;
+    } 
+} */
+.about-img img{
+    border-radius: 4px;
+}
+.container-skill .skills{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition:  0.5s;
+}
+.container-skill .skills::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 10;
+}
+.container-skill .skills .name{
+    position: relative;
+    width: 110px;
+    text-align: right;
+    color: #fff;
+    margin-top: -2px;
+    font-size: small;
+    text-transform: uppercase;
+}
+.container-skill .skills .value{
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    text-align: left;
+    color: #fff;
+    margin-top: -2px;
+    font-size: small;
+    text-transform: uppercase;
+}
+.container-skill .skills .percent{
+    position: relative;
+    width: calc(100% - 150px);
+    height: 10px;
+    margin: 0 10px;
+    border-radius: 10px;
+    background: #151515;
+    box-shadow: inset 0 0 10px #000;
+    overflow: hidden;
+}
+.container-skill .skills .percent .progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: inset 0 0 2px #000;
+    animation: animate 4s ease-in-out forwards;
+}
+@keyframes animate {
+    from{
+        width: 0%;
+    }
+}
+.container-skill .skills:nth-child(even) .percent .progress{
+    background: linear-gradient(45deg, #1f16ff, #673AB7);
+}
+.container-skill .skills:nth-child(odd) .percent .progress{
+    background: linear-gradient(45deg, #3bc0ff, #4070F4);
+}
+.resume{
+    padding: 10px 30px;
+    background: none;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 2px;
+    transition: all 1s;
+}
+.resume:hover{
+    background: #4070F4 !important;
+    color: #fff !important;
+}
+.dot::before{
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 40px;
+    left: 35px;
+    background-image: radial-gradient(#4070F4 20%, transparent 18%);
+    background-position: 0 0;
+    background-size: 6px 11px;
+    height: 115%;
+    width: 1%;
+    border-radius: 0;
+}
+/* About ends here */
+.footer{
+    border-top: 1px solid rgba(255,255,255,0.2);;
+}
+.i{
+    font-size: 2.5rem;
+}
+input,textarea{
+    background: none !important;
+    border: 1px solid rgba(255,255,255,0.2) !important;
+}
+.error{
+    color: red;
+}
+@media  only screen and (min-width:576px){
+    .burger a svg{
+        font-size: 2.3rem;
+    }
+    .container-skill .skills .value, .name{
+        font-size: medium;
+    }
+    .container-skill .skills .name{
+        font-size: medium;
+    }
+    .dot::before{
+        left: 35px !important;  
+    }
+    .h1c{
+        font-size: 6vw !important;
+    }
+    .counter{
+        font-size: 5rem;
+    }
+}
+@media  only screen and (min-width:768px){
+    .main-menu li a{
+        font-size: 3rem;
+    }
+    .h1c{
+        font-size: 4vw !important;
+    }
+    .btn:hover span{
+        width: 1000px;
+        height: 1000px;
+    }
+    #scrollpath{
+        width: 3px;
+    }
+    #progressbar{
+        width: 3px;
+    }
+    .counter{
+        font-size: 6rem;
+    }
+}
+@media  only screen and (min-width:992px){
+    #cursor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        position: absolute !important;
+        box-sizing: border-box;
+        transform: translate(-50%,-50%);
+        transition: all 0.1s;
+        z-index: 2;
+    }
+    #cursor span{
+        display: block;
+        width: 1px;
+        height: 1px;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 100%;
+        transition: all 0.1s;
+    }
+    .burger a svg{
+        font-size: 2.5rem;
+    }
+    .btn:hover span{
+        width: 700px;
+        height: 700px;
+    }
+    .about-img img, .bulb img{
+        height: 400px !important;
+    }
+    .counter{
+        font-size: 7rem;
+    }
+}
+@media only screen and (min-width:1200px){
+    .btn:hover span{
+        width: 1000px;
+        height: 1000px;
+    }
+    .h1c{
+        font-size: 3vw !important;
+    }
+    .about-img img{
+        height: 450px !important;
+    }
+    .counter{
+        font-size: 8rem;
+    }
+}
